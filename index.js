@@ -4,14 +4,11 @@ const botConfig = require("./botconfig.json");
 const client = new discord.Client();
 client.login(botConfig.token);
  
-client.on("ready", async () => {
- 
-    console.log(`${client.user.username} is online.`);
- 
-    client.user.setActivity("Testing", { type: "PLAYING" });
- 
+lient.on('ready', () => {
+
+    console.log('I am ready!');
+
 });
- 
  
 client.on("message", async message => {
  
