@@ -4,7 +4,7 @@ const botConfig = require("./botconfig.json");
 const client = new discord.Client();
 client.login(botConfig.token);
  
-lient.on('ready', () => {
+client.on('ready', () => {
 
     console.log('I am ready!');
 
